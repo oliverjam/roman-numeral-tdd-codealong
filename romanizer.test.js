@@ -7,9 +7,9 @@ test('Tape is up and running', function(t) {
 });
 
 test('Romanizer returns a string', function(t) {
-  var actual = romanizer(2);
-  var expected = '2';
-  t.equal(actual, expected, 'Two should equal two');
+  var actual = typeof romanizer(2);
+  var expected = 'string';
+  t.equal(actual, expected, 'Output should be a string');
   t.end();
 });
 

@@ -15,14 +15,14 @@ test('Romanizer returns a string', function(t) {
 
 test('Romanizer returns the correct result', function(t) {
   var actual = romanizer(1);
-  var expected = 'i';
-  t.equal(actual, expected, 'One should convert to i');
+  var expected = 'I';
+  t.equal(actual, expected, 'One should convert to I');
   t.end();
 });
 
 test('Romanizer returns the correct result', function(t) {
   var actual = romanizer(2);
-  var expected = 'ii';
-  t.equal(actual, expected, 'Two should convert to ii');
+  var expected = 'II';
+  t.equal(actual, expected, 'Two should convert to II');
   t.end();
 });

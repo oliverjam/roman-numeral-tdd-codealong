@@ -12,3 +12,10 @@ test('Romanizer returns a string', function(t) {
   t.equal(actual, expected, 'Two should equal two');
   t.end();
 });
+
+test('Romanizer returns the correct result', function(t) {
+  var actual = romanizer(1);
+  var expected = 'i';
+  t.equal(actual, expected, 'One should convert to i');
+  t.end();
+});

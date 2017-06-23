@@ -103,6 +103,42 @@ var values = [
     roman: 'M',
   },
   {
+    arabic: 974,
+    roman: 'CMLXXIV',
+  },
+  {
+    arabic: 973,
+    roman: 'CMLXXIII',
+  },
+  {
+    arabic: 970,
+    roman: 'CMLXX',
+  },
+  {
+    arabic: 900,
+    roman: 'CM',
+  },
+  {
+    arabic: 899,
+    roman: 'DCCCXCIX',
+  },
+  {
+    arabic: 874,
+    roman: 'DCCCLXXIV',
+  },
+  {
+    arabic: 808,
+    roman: 'DCCCVIII',
+  },
+  {
+    arabic: 774,
+    roman: 'DCCLXXIV',
+  },
+  {
+    arabic: 674,
+    roman: 'DCLXXIV',
+  },
+  {
     arabic: 500,
     roman: 'D',
   },

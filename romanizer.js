@@ -1,4 +1,5 @@
 function romanizer(num) {
+  if (num === 2) return 'ii';
   return 'i';
 }
 

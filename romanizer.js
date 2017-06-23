@@ -97,6 +97,14 @@
 
 var values = [
   {
+    arabic: 1000,
+    roman: 'M',
+  },
+  {
+    arabic: 500,
+    roman: 'D',
+  },
+  {
     arabic: 100,
     roman: 'C',
   },

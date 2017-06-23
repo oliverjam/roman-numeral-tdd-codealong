@@ -33,7 +33,9 @@
 // This continues using the same mechanism as before - appending to a result variable
 function romanizer(num) {
   var result = '';
-  if (num === 4) {
+  if (num === 5) {
+    result += 'V';
+  } else if (num === 4) {
     result += 'IV';
   } else {
     while (num > 0) {

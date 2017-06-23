@@ -186,6 +186,8 @@ var values = [
 // The final solution didn't cover edge cases like 0 or negative numbers
 function romanizer(num) {
   if (num <= 0) return 'The Romans had no representation for less than 1';
+  if (num >= 5000)
+    return "There's no easy way to represent numbers over 4999 in Roman numerals, sorry!";
   var remaining = num;
   var result = '';
   values.forEach(function(value) {

@@ -30,6 +30,13 @@ test('Romanizer returns the correct result', function(t) {
 test('Romanizer returns the correct result', function(t) {
   var actual = romanizer(3);
   var expected = 'III';
-  t.equal(actual, expected, 'Two should convert to III');
+  t.equal(actual, expected, 'Three should convert to III');
+  t.end();
+});
+
+test('Romanizer returns the correct result', function(t) {
+  var actual = romanizer(34);
+  var expected = 'IV';
+  t.equal(actual, expected, 'Four should convert to IV');
   t.end();
 });

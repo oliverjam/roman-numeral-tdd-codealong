@@ -54,3 +54,17 @@ test('Romanizer returns the correct result', function(t) {
   t.equal(actual, expected, 'Six should convert to VI');
   t.end();
 });
+
+test('Romanizer returns the correct result', function(t) {
+  var actual = romanizer(7);
+  var expected = 'VII';
+  t.equal(actual, expected, 'Seven should convert to VII');
+  t.end();
+});
+
+test('Romanizer returns the correct result', function(t) {
+  var actual = romanizer(8);
+  var expected = 'VIII';
+  t.equal(actual, expected, 'Eight should convert to VIII');
+  t.end();
+});

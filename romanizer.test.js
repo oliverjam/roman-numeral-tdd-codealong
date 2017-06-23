@@ -75,3 +75,24 @@ test('Romanizer returns the correct result', function(t) {
   t.equal(actual, expected, 'Nine should convert to IX');
   t.end();
 });
+
+test('Romanizer returns the correct result', function(t) {
+  var actual = romanizer(10);
+  var expected = 'X';
+  t.equal(actual, expected, 'Ten should convert to X');
+  t.end();
+});
+
+test('Romanizer returns the correct result', function(t) {
+  var actual = romanizer(11);
+  var expected = 'XI';
+  t.equal(actual, expected, 'Eleven should convert to XI');
+  t.end();
+});
+
+test('Romanizer returns the correct result', function(t) {
+  var actual = romanizer(30);
+  var expected = 'XXX';
+  t.equal(actual, expected, '30 should convert to XXX');
+  t.end();
+});

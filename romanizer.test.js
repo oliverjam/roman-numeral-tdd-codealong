@@ -35,7 +35,7 @@ test('Romanizer returns the correct result', function(t) {
 });
 
 test('Romanizer returns the correct result', function(t) {
-  var actual = romanizer(34);
+  var actual = romanizer(4);
   var expected = 'IV';
   t.equal(actual, expected, 'Four should convert to IV');
   t.end();

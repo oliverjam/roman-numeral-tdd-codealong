@@ -68,3 +68,10 @@ test('Romanizer returns the correct result', function(t) {
   t.equal(actual, expected, 'Eight should convert to VIII');
   t.end();
 });
+
+test('Romanizer returns the correct result', function(t) {
+  var actual = romanizer(9);
+  var expected = 'IX';
+  t.equal(actual, expected, 'Nine should convert to IX');
+  t.end();
+});

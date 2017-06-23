@@ -52,10 +52,31 @@
 
 // It looks like from 5 up we need to start with V, then append Is
 // We already wrote code to append Is, so let's leverage that
+// function romanizer(num) {
+//   var remaining = num;
+//   var result = '';
+//   if (remaining >= 5) {
+//     result += 'V';
+//     remaining -= 5;
+//   } else if (num === 4) {
+//     result += 'IV';
+//     remaining -= 4;
+//   }
+//   while (remaining > 0) {
+//     result += 'I';
+//     remaining -= 1;
+//   }
+//   return result;
+// }
+
 function romanizer(num) {
   var remaining = num;
   var result = '';
-  if (remaining >= 5) {
+
+  if (remaining >= 9) {
+    result += 'IX';
+    remaining -= 9;
+  } else if (remaining >= 5) {
     result += 'V';
     remaining -= 5;
   } else if (num === 4) {

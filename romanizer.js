@@ -171,7 +171,21 @@ var values = [
 // The previous solution failed for 30 -> XXX because we're only repeating I
 // Larger solutions need other roman numerals to be repeated
 // We need to combine our two approaches
+// function romanizer(num) {
+//   var remaining = num;
+//   var result = '';
+//   values.forEach(function(value) {
+//     while (remaining >= value.arabic) {
+//       result += value.roman;
+//       remaining -= value.arabic;
+//     }
+//   });
+//   return result;
+// }
+
+// The final solution didn't cover edge cases like 0 or negative numbers
 function romanizer(num) {
+  if (num <= 0) return 'The Romans had no representation for less than 1';
   var remaining = num;
   var result = '';
   values.forEach(function(value) {

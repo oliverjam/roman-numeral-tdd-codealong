@@ -15,7 +15,7 @@ test('Romanizer returns a string', function(t) {
 
 test('Romanizer returns the correct result', function(t) {
   var actual = romanizer(0);
-  var expected = '0 has no Roman equivalent';
+  var expected = 'The Romans had no representation for less than 1';
   t.equal(actual, expected, 'Zero should have no equivalent Roman numeral');
   t.end();
 });

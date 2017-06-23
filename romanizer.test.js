@@ -107,24 +107,8 @@ var values = [
     roman: 'CM',
   },
   {
-    arabic: 899,
-    roman: 'DCCCXCIX',
-  },
-  {
-    arabic: 874,
-    roman: 'DCCCLXXIV',
-  },
-  {
-    arabic: 808,
-    roman: 'DCCCVIII',
-  },
-  {
     arabic: 774,
     roman: 'DCCLXXIV',
-  },
-  {
-    arabic: 674,
-    roman: 'DCLXXIV',
   },
   {
     arabic: 500,

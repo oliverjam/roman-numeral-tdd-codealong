@@ -199,6 +199,7 @@ function romanizer(num) {
   return result;
 }
 
-if (module.exports !== undefined) {
+if (typeof module !== 'undefined') {
+  console.log('wat');
   module.exports = romanizer;
 }

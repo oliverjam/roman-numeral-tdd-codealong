@@ -103,6 +103,10 @@ var values = [
     roman: 'M',
   },
   {
+    arabic: 999,
+    roman: 'CMXCIX',
+  },
+  {
     arabic: 900,
     roman: 'CM',
   },

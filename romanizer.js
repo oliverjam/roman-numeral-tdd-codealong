@@ -69,20 +69,80 @@
 //   return result;
 // }
 
+// There's a pattern emerging here too
+// If we change the final if block to use >= then we can generalise them all
+// function romanizer(num) {
+//   var remaining = num;
+//   var result = '';
+//
+//   if (remaining >= 9) {
+//     result += 'IX';
+//     remaining -= 9;
+//   } else if (remaining >= 5) {
+//     result += 'V';
+//     remaining -= 5;
+//   } else if (num === 4) {
+//     result += 'IV';
+//     remaining -= 4;
+//   }
+//   while (remaining > 0) {
+//     result += 'I';
+//     remaining -= 1;
+//   }
+//   return result;
+// }
+
+// We need a way to map arabic to roman numerals (e.g. 9 -> IX) to generalise the if blocks
+// We'll use an array of objects to store these pairs
+
+var values = [
+  {
+    arabic: 100,
+    roman: 'C',
+  },
+  {
+    arabic: 90,
+    roman: 'XC',
+  },
+  {
+    arabic: 50,
+    roman: 'L',
+  },
+  {
+    arabic: 40,
+    roman: 'XL',
+  },
+  {
+    arabic: 10,
+    roman: 'XL',
+  },
+  {
+    arabic: 9,
+    roman: 'IX',
+  },
+  {
+    arabic: 5,
+    roman: 'V',
+  },
+  {
+    arabic: 4,
+    roman: 'IV',
+  },
+  {
+    arabic: 1,
+    roman: 'I',
+  },
+];
+
 function romanizer(num) {
   var remaining = num;
   var result = '';
-
-  if (remaining >= 9) {
-    result += 'IX';
-    remaining -= 9;
-  } else if (remaining >= 5) {
-    result += 'V';
-    remaining -= 5;
-  } else if (num === 4) {
-    result += 'IV';
-    remaining -= 4;
-  }
+  values.forEach(function(value) {
+    if (remaining >= value.arabic) {
+      result += value.roman;
+      remaining -= value.arabic;
+    }
+  });
   while (remaining > 0) {
     result += 'I';
     remaining -= 1;

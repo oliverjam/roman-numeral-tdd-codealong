@@ -200,6 +200,5 @@ function romanizer(num) {
 }
 
 if (typeof module !== 'undefined') {
-  console.log('wat');
   module.exports = romanizer;
 }

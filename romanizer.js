@@ -114,7 +114,7 @@ var values = [
   },
   {
     arabic: 10,
-    roman: 'XL',
+    roman: 'X',
   },
   {
     arabic: 9,
@@ -134,19 +134,36 @@ var values = [
   },
 ];
 
+// function romanizer(num) {
+//   var remaining = num;
+//   var result = '';
+// This is the same logic as our multiple if branches before
+// It's just abstracted into a loop
+//   values.forEach(function(value) {
+//     if (remaining >= value.arabic) {
+//       result += value.roman;
+//       remaining -= value.arabic;
+//     }
+//   });
+//   while (remaining > 0) {
+//     result += 'I';
+//     remaining -= 1;
+//   }
+//   return result;
+// }
+
+// The previous solution failed for 30 -> XXX because we're only repeating I
+// Larger solutions need other roman numerals to be repeated
+// We need to combine our two approaches
 function romanizer(num) {
   var remaining = num;
   var result = '';
   values.forEach(function(value) {
-    if (remaining >= value.arabic) {
+    while (remaining >= value.arabic) {
       result += value.roman;
       remaining -= value.arabic;
     }
   });
-  while (remaining > 0) {
-    result += 'I';
-    remaining -= 1;
-  }
   return result;
 }
 

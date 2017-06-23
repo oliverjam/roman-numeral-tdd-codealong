@@ -106,6 +106,11 @@ test('Romanizer returns the correct result', function(t) {
 
 var values = [
   {
+    arabic: 5000,
+    roman:
+      "There's no easy way to represent numbers over 4999 in Roman numerals, sorry!",
+  },
+  {
     arabic: 4999,
     roman: 'MMMMCMXCIX',
   },

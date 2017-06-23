@@ -13,6 +13,13 @@ test('Romanizer returns a string', function(t) {
   t.end();
 });
 
+test('Romanizer returns the correct result', function(t) {
+  var actual = romanizer(0);
+  var expected = '0 has no Roman equivalent';
+  t.equal(actual, expected, 'Zero should have no equivalent Roman numeral');
+  t.end();
+});
+
 // test('Romanizer returns the correct result', function(t) {
 //   var actual = romanizer(1);
 //   var expected = 'I';

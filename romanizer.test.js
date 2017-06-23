@@ -99,12 +99,12 @@ test('Romanizer returns a string', function(t) {
 
 var values = [
   {
-    arabic: 1000,
-    roman: 'M',
+    arabic: 4999,
+    roman: 'MMMMCMXCIX',
   },
   {
-    arabic: 999,
-    roman: 'CMXCIX',
+    arabic: 1000,
+    roman: 'M',
   },
   {
     arabic: 900,

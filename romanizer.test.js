@@ -19,3 +19,10 @@ test('Romanizer returns the correct result', function(t) {
   t.equal(actual, expected, 'One should convert to i');
   t.end();
 });
+
+test('Romanizer returns the correct result', function(t) {
+  var actual = romanizer(2);
+  var expected = 'ii';
+  t.equal(actual, expected, 'Two should convert to ii');
+  t.end();
+});

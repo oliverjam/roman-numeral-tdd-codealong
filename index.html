@@ -9,7 +9,7 @@
     * {
       box-sizing: border-box;
     }
-    
+
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     }
@@ -23,13 +23,34 @@
       color: inherit;
       background-color: #ffffff;
       border: 1px solid;
-      border-radius: 2px;
+      border-radius: 0;
     }
 
     .container {
-      max-width: 40em;
+      max-width: 40rem;
       margin: 0 auto;
-      padding: 1em;
+      padding: 1rem;
+    }
+
+    .form__input {
+      margin-top: 0.5rem;
+      padding: 0.5rem;
+    }
+
+    .form__button {
+      padding: 0.5rem;
+      border-top: none;
+    }
+
+    .result {
+      width: 100%;
+      height: 5rem;
+      margin-top: 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2em;
+      border: 1px solid;
     }
   </style>
 </head>
@@ -37,9 +58,10 @@
   <main class="container">
     <form class="form">
       <label class="form" for="numeral">Enter a number</label>
-      <input class="form__input"id="numeral" type="number">
-      <button class="form__input form__input--btn" type="submit">Submit</button>
+      <input class="form__input"id="numeral" type="number" placeholder="e.g. 42">
+      <button class="form__button" type="submit">Submit</button>
     </form>
+    <div class="result">XIV</div>
   </main>
 </body>
 </html>
